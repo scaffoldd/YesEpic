@@ -1,3 +1,39 @@
+local library = { }
+
+-- Services
+local players = game:GetService("Players")
+local uis = game:GetService("UserInputService")
+local runservice = game:GetService("RunService")
+local tweenservice = game:GetService("TweenService")
+local marketplaceservice = game:GetService("MarketplaceService")
+local textservice = game:GetService("TextService")
+local coregui = game:GetService("CoreGui")
+
+local player = players.LocalPlayer
+local mouse = player:GetMouse()
+local camera = game.Workspace.CurrentCamera
+
+library.theme = {
+    fontsize = 15,
+    font = Enum.Font.Code,
+    background = "rbxassetid://6880496154",
+    backgroundcolor = Color3.fromRGB(20, 20, 20),
+    tabstextcolor = Color3.fromRGB(230, 230, 230),
+    bordercolor = Color3.fromRGB(60, 60, 60),
+    accentcolor = Color3.fromRGB(28, 56, 139),
+    accentcolor2 = Color3.fromRGB(16, 31, 78),
+    outlinecolor = Color3.fromRGB(60, 60, 60),
+    outlinecolor2 = Color3.fromRGB(0, 0, 0),
+    sectorcolor = Color3.fromRGB(30, 30, 30),
+    toptextcolor = Color3.fromRGB(255, 255, 255),
+    topheight = 48,
+    topcolor = Color3.fromRGB(30, 30, 30),
+    topcolor2 = Color3.fromRGB(12, 12, 12),
+    buttoncolor = Color3.fromRGB(49, 49, 49),
+    buttoncolor2 = Color3.fromRGB(39, 39, 39),
+    itemscolor = Color3.fromRGB(200, 200, 200)
+}
+
 function library:CreateWatermark(name)
     local watermark = { }
     watermark.Visible = true
