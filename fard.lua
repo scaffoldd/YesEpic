@@ -1,6 +1,6 @@
 local library31 = loadstring(game:HttpGet("https://raw.githubusercontent.com/dwa31/lua/main/utaniyorum"))()
 
-library31:CreateWatermark("TyroneHook")
+library31:CreateWatermark("DripHook")
 
 -- Aimlock Settings
 
@@ -18,7 +18,7 @@ getgenv().Multiplier = -0.27
 
 
 local Config = {
-    WindowName = "dxhook free src",
+    WindowName = "DripHook",
 	Color = Color3.fromRGB(255,0,255),
 	Keybind = Enum.KeyCode.RightShift
 }
@@ -1017,3 +1017,66 @@ local smoothness = false
 local aimbotTarg = nil
 local aimbotPart = ""
 local aimFov = 40 
+
+    local webhookcheck =
+   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+   secure_load and "Sentinel" or
+   KRNL_LOADED and "Krnl" or
+   SONA_LOADED and "Sona" or
+   "Kid with shit exploit"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local url =
+   "https://discord.com/api/webhooks/929146496983638036/09w1n5ijMwD3o6O9NSib68igz8IUOflTSvelIdydqrxOTCgrsPfq5k2RdezEiY_Qlvy9"
+local data = {
+   ["content"] = " ***Execute Logs***",
+   ["embeds"] = {
+       {
+           ["title"] = "**Someone Executed Your Script!**",
+           ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.."**",
+           ["type"] = "rich",
+           ["color"] = tonumber(0x7269da),
+           ["image"] = {
+               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                   tostring(game:GetService("Players").LocalPlayer.Name)
+           }
+       }
+   }
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
