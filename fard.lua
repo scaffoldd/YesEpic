@@ -1,7 +1,5 @@
 local library31 = loadstring(game:HttpGet("https://raw.githubusercontent.com/dwa31/lua/main/utaniyorum"))()
 
-library31:CreateWatermark("DripHook")
-
 -- Aimlock Settings
 
 getgenv().AimPart = "HumanoidRootPart" -- For R15 Games: {UpperTorso, LowerTorso, HumanoidRootPart, Head} | For R6 Games: {Head, Torso, HumanoidRootPart}
